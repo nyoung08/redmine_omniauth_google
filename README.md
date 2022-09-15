@@ -9,9 +9,15 @@ Download the plugin and install required gems:
 ```console
 cd /path/to/redmine/plugins
 git clone https://github.com/twinslash/redmine_omniauth_google.git
+# need to edit the second line in init.rb 
+# require_dependency '/path/to/redmine/plugins/redmine_omniauth_google/lib/redmine_omniauth_google/hooks'
 cd /path/to/redmine
 bundle install
 ```
+
+need to edit the second line in init.rb 
+```console
+# require_dependency '/path/to/redmine/plugins/redmine_omniauth_google/lib/redmine_omniauth_google/hooks'
 
 Restart the app
 ```console
@@ -67,7 +73,7 @@ With the above configuration, only users with email addresses on the domains "on
 ### Authentication Workflow
 
 1. An unauthenticated user requests the URL to your Redmine instance.
-2. User clicks the "Login via Google" buton.
+2. User clicks the "sign in with google" buton.
 3. The plugin redirects them to a Google sign in page if they are not already signed in to their Google account.
 4. Google redirects user back to Redmine, where the Google OAuth plugin's controller takes over.
 
