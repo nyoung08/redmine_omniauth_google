@@ -9,8 +9,6 @@ Download the plugin and install required gems:
 ```console
 cd /path/to/redmine/plugins
 git clone https://github.com/twinslash/redmine_omniauth_google.git
-# need to edit the second line in init.rb 
-# require_dependency '/path/to/redmine/plugins/redmine_omniauth_google/lib/redmine_omniauth_google/hooks'
 cd /path/to/redmine
 bundle install
 ```
