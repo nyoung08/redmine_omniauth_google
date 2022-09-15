@@ -18,6 +18,7 @@ bundle install
 need to edit the second line in init.rb 
 ```console
 # require_dependency '/path/to/redmine/plugins/redmine_omniauth_google/lib/redmine_omniauth_google/hooks'
+```
 
 Restart the app
 ```console
